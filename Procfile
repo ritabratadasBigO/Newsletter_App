@@ -1,0 +1,1 @@
+web: streamlit run daily_news_viewer.py --server.port=$PORT --server.enableCORS=false
