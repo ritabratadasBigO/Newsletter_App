@@ -58,7 +58,7 @@ selected_date = st.sidebar.date_input("Select a date", datetime.today())
 # --- Format date to match your HTML filenames ---
 formatted_date = selected_date.strftime('%d%b%Y')  # e.g., 22Nov2024
 html_filename = f"daily_news_feed_{formatted_date}.html"
-github_url = f"https://niteowl1986.github.io/Daily-News-Feed/{html_filename}"
+github_url = f"https://ritabratadasBigO.github.io/Daily-News-Feed/{html_filename}"
 
 st.sidebar.markdown(f"[🔗 View raw HTML on GitHub]({github_url})")
 
