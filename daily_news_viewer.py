@@ -36,6 +36,13 @@ st.markdown(
         text-decoration: underline;
     }
 
+    div[data-testid="stDateInputContainer"] label {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #d32f2f;
+        text-shadow: 1px 1px 1px #fff;
+    }
+
     </style>
     """,
     unsafe_allow_html=True
@@ -53,12 +60,12 @@ st.markdown(
 )
 
 # --- Sidebar calendar to select date ---
-selected_date = st.sidebar.date_input("Select a date", datetime.today())
+selected_date = st.sidebar.date_input("CALENDAR", datetime.today())
 
 # --- Format date to match your HTML filenames ---
 formatted_date = selected_date.strftime('%d%b%Y')  # e.g., 22Nov2024
 html_filename = f"daily_news_feed_{formatted_date}.html"
-github_url = f"https://niteowl1986.github.io/Daily-News-Feed/{html_filename}"
+github_url = f"https://ritabratadasBigO.github.io/Daily-News-Feed/{html_filename}"
 
 st.sidebar.markdown(f"[🔗 View raw HTML on GitHub]({github_url})")
 
